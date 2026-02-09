@@ -45,13 +45,3 @@ This documentation intentionally explains **why** decisions were made, not just 
 * A blockchain protocol deep dive
 
 ---
-
-## Next Phases
-
-Subsequent documentation (not covered here) includes:
-
-* Blockchain node deployment (Ethereum Sepolia)
-* systemd-based reliability configuration
-* Monitoring with Prometheus / Grafana
-* Incident simulation and response
-
