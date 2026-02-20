@@ -21,3 +21,26 @@ Restrict network access to only what is explicitly required.
 - Confirmed SSH access post-enablement
 - Verified firewall status and active rules
 
+
+> Orignal OP 
+```bash 
+
+
+mukul in  Ubuntu-24 in ~
+❯ sudo ufw status verbose
+
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp (OpenSSH)           ALLOW IN    Anywhere
+80,443/tcp (Nginx Full)    ALLOW IN    Anywhere
+
+22/tcp (OpenSSH (v6))      ALLOW IN    Anywhere (v6)
+80,443/tcp (Nginx Full (v6)) ALLOW IN    Anywhere (v6)
+
+
+```
