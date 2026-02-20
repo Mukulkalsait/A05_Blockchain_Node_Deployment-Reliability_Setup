@@ -22,7 +22,7 @@ The documentation is split into topic-wise runbooks, each aligned with a short r
 ## Scope & Intent
 
 * Cloud provider: DigitalOcean
-* OS: Ubuntu 22.04 LTS
+* OS: Ubuntu 24.04 LTS
 * Access model: SSH key–only
 * Philosophy: minimal surface area, explicit security controls, observable system state
 
