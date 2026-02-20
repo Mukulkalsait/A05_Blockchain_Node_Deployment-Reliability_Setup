@@ -21,3 +21,26 @@ Ensure timely installation of critical security patches without manual intervent
 - Confirmed unattended-upgrades service active
 - Verified configuration file settings
 
+```bash 
+
+mukul in  Ubuntu-24 in ~ took 3s
+❯ sudo apt list | grep upgrades
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+unattended-upgrades/noble,now 2.9.1+nmu4ubuntu1 all [installed]
+
+
+mukul in  Ubuntu-24 in ~ took 3s
+❯ sudo apt install unattended-upgrades -y  
+
+# After installation 
+
+mukul in  Ubuntu-24 in ~
+❯ sudo dpkg-re
+dpkg-realpath     dpkg-reconfigure
+
+mukul in  Ubuntu-24 in ~
+❯ sudo dpkg-reconfigure --priority=low unattended-upgrades
+ 
+```
