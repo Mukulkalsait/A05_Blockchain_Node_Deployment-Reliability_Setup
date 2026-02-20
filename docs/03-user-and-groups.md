@@ -21,3 +21,12 @@ Apply least-privilege principles by avoiding root usage for daily operations and
 - Confirmed sudo access for administrative commands
 - Verified SSH access using non-root user
 
+> Orignal OP 
+
+```bash 
+
+mukul in  Ubuntu-24 in ~/scripts
+❯ getent passwd | tail -n 2
+mukul:x:1000:1000::/home/mukul:/bin/bash
+```
+
