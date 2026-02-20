@@ -1,0 +1,32 @@
+; /etc/systemd/system/geth.service
+
+[Unit]
+Description= Geth Etherium Node (sepolia)
+After=network.target
+; unit should start AFTER starting network.target => insures network is up.
+Wants=network.target
+
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
+[Service]
+Type=simple
+
+User=geth
+Group=geth
+
+Restart=always
+RestartSec=5
+
+
+LimitNOFILE=65536
+; usually its 1024 we did 1024*1024 = 65536
+; prevent too many open file error.
+
+ExecStart=/usr/bin/geth --sepolia --datadir /var/lib/geth --syncmode snap \
+--http --http.api eth,net,web3  --http.addr 127.0.0.1  --http.port 8545 \
+--authrpc.addr 127.0.0.1 --authrpc.port 8551 \
+--metrics  --metrics.addr 127.0.0.1  --metrics.port 6060
+
+[Install]
+WantedBy=multi-user.target
