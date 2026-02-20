@@ -22,3 +22,4 @@ Reduce attack surface on the primary remote access mechanism.
 - Confirmed successful login post-change
 - Confirmed root and password logins were rejected
 
+> Config location : 󰒓 sshd_config[../files/2_Config_New/sshd_config]
