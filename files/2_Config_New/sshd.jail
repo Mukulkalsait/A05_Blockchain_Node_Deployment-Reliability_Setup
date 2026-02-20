@@ -1,0 +1,9 @@
+
+[sshd]
+  enable = yes
+  port = ssh
+  filter = sshd
+
+  maxretry = 3
+  findtime = 5m
+  bantime = 1h

@@ -59,7 +59,7 @@ geth:x:999:988::/var/lib/geth:/bin/sh
 
 ### LimitNOFILE = (1024*1024)65535
 
-[🗃️ CONFIG_FILE: /etc/systemd/system/geth.service](../files/2_Config_New/geth.service)
+[🗃️ CONFIG_FILE: /etc/systemd/system/geth.service](../../files/2_Config_New/geth.service)
 
 Blockchanin  uses many peer connections so many files.
 

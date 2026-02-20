@@ -20,6 +20,8 @@ Provide automated protection against repeated authentication failures.
 - Service status confirmed running
 - Logs verified for active monitoring
 
+> Config File [Fail2Ban=/etc/fail2ban/sshd.jail](../../files/2_Config_New/sshd.jail)
+
 > Orignal OP
 ```bash 
 mukul in  Ubuntu-24 in ~
