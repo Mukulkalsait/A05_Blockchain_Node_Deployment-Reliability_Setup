@@ -1,0 +1,42 @@
+# podman run --name prometheus -d -p 9090:9090 --network=host -v /opt/monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:Z -v prometheus-data:/prometheus:Z docker.io/prom/prometheus:latest
+
+version: 3.8
+services:
+  # NOTE: Prometheus
+  prometheus-app: 
+    container_name: cont_prometheus
+    image: 'docker.io/prom/prometheus:latest'
+
+    network_mode: host
+    pid: host
+    ports:
+      - "9090:9090"
+    volumes:
+      - '/opt/monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml'
+      - 'prometheus-data:/prometheus:Z'
+
+    environment:
+      # - VAR_NAME=value
+      # - ANOTHER_VAR=anothervalue
+
+    restart: unless-stopped
+    depends_on:
+      - node-exporter
+
+  # NOTE: node-exporter
+  node-exporter: 
+    image: 'docker.io/prom/node-exporter'
+    container_name: node-exporter
+    # image: quay.io/prometheus/node-exporter:latest
+    environment:
+
+volumes:
+  prometheus-data:
+    driver: local
+
+# Define networks if custom networking is needed (optional)
+# networks:
+#   webnet:
+#     driver: bridge
+
+
