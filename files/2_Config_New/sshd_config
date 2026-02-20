@@ -8,7 +8,7 @@ PasswordAuthentication no
 ChallengeResponseAuthentication no
 X11Forwarding no
 
-usePAM yes
+UsePAM yes
 PubKeyAuthentication yes
 AllowTCPForwarding yes
 
