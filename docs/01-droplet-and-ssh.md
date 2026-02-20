@@ -42,3 +42,4 @@ An SSH alias was configured locally to:
 - Verified SSH access using alias
 - Confirmed password login was never enabled
 
+  <img src="./pic/1/1.png" alt="DigitalOcean Droplet"><br>
