@@ -20,3 +20,27 @@ Provide automated protection against repeated authentication failures.
 - Service status confirmed running
 - Logs verified for active monitoring
 
+> Orignal OP
+```bash 
+mukul in  Ubuntu-24 in ~
+❯ sudo fail2ban-client status
+Status
+|- Number of jail:      1
+`- Jail list:   sshd
+
+mukul in  Ubuntu-24 in ~
+❯ sudo fail2ban-client status sshd
+Status for the jail: sshd
+|- Filter
+|  |- Currently failed: 4
+|  |- Total failed:     5689
+|  `- Journal matches:  _SYSTEMD_UNIT=sshd.service + _COMM=sshd
+`- Actions
+   |- Currently banned: 4
+   |- Total banned:     555
+   `- Banned IP list:   92.118.39.76 192.241.184.7 170.64.154.41 159.89.13.139
+
+mukul in  Ubuntu-24 in ~
+❯
+
+```
