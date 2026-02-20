@@ -9,13 +9,22 @@ The documentation is split into topic-wise runbooks, each aligned with a short r
 
 ## Documentation Index
 
-1. [Droplet Creation & SSH Access](docs/01-droplet-and-ssh.md)
-2. [Basic System Checks](docs/02-system-checks.md)
-3. [User & Group Management](docs/03-user-and-groups.md)
-4. [SSHD Hardening](docs/04-sshd-configuration.md)
-5. [Firewall Configuration (UFW)](docs/05-firewall.md)
-6. [Fail2Ban Setup](docs/06-fail2ban.md)
-7. [Unattended Security Upgrades](docs/07-unattended-upgrades.md)
+### Phase_1: (Local Mashine Setup)
+1. [Droplet Creation & SSH Access](./docs/Phase_1/01-droplet-and-ssh.md)
+2. [Basic System Checks](./docs/Phase_1/02-system-checks.md)
+3. [User & Group Management](./docs/Phase_1/03-user-and-groups.md)
+4. [SSHD Hardening](./docs/Phase_1/04-sshd-configuration.md)
+5. [Firewall Configuration (UFW)](./docs/Phase_1/05-firewall.md)
+6. [Fail2Ban Setup](./docs/Phase_1/06-fail2ban.md)
+7. [Unattended Security Upgrades](./docs/Phase_1/07-unattended-upgrades.md)
+
+### Phase_2: Geth Setup (Host Version test)
+8. [ Geth Installation. ](./docs/Phase_2/08-Geth-Installation.md)
+9. [ Geth Auto Starting ](./docs/Phase_2/09-Geth-Autostart-Systemd.md)
+10. [ Service Reliability ](./docs/Phase_2/10-network-validation.md)
+11. [ Network Validation ](./docs/Phase_2/11-debugging-systemd-failures.md)
+12. [ Debuging & Problems ](./docs/Phase_2/12-service-reliability.md)
+13. [ Runtime Observation ](./docs/Phase_2/13-runtime-observations.md)
 
 ---
 
